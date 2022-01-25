@@ -32,7 +32,7 @@ public class WildfireController {
 
     }
 
-    @DeleteMapping(value = "/delete/{movieId}")
+    @DeleteMapping(value = "/delete/{id}")
     public void deleteWildfire(@PathVariable String id) {
         wildfireRepository.deleteById(id);
     }
